@@ -62,3 +62,51 @@ void imprimeCliente(Nolista **l) { //imprime a lista de clientes
     printf("Lista Vazia!");
   }
 }
+
+void insereOrdenado(Nolista** l, Cliente* v) {
+    Nolista* novo = (Nolista*)malloc(sizeof(Nolista));
+    Nolista* p, * ant = NULL;
+
+    if (novo != NULL) {
+        novo->inf.id = v->id;
+        strcpy(novo->inf.nome, v->nome);
+           
+
+        // Encontrar a posição correta na lista
+        for (p = *l; p != NULL && strcmp(p->inf.nome, v->nome) < 0; p = p->prox){
+          ant = p;
+        }
+
+        if (ant == NULL) {
+            // Insere no início da lista
+            novo->prox = *l;
+            *l = novo;
+        } else {
+            // Insere no meio ou final da lista
+            ant->prox = novo;
+            novo->prox = p;
+        }
+    }
+}
+
+void removerCliente(Nolista **l, Cliente* v) {
+   Nolista* p, * ant = NULL;
+
+  for (p = *l; p != NULL && strcmp(p->inf.nome, v->nome) != 0; p = p->prox){
+     ant = p;
+  }
+
+  if (p==NULL){
+    printf("Nome não encontrado");
+  }
+
+  else{
+    if (ant !=NULL){
+      ant->prox=p->prox;
+    }
+    else{
+      *l = p;
+    }
+   free(p);
+  }  
+}
