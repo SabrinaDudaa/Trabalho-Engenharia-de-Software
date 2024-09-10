@@ -68,11 +68,39 @@ if (novo != NULL) {
 }
 }
 
-void removerCliente(Nolista l, Cliente v) { Nolista p, * ant = NULL;
+void removerCliente(Nolista **l, Cliente* v) {
+   Nolista* p, * ant = NULL;
 
-for (p = *l; p != NULL && strcmp(p->inf.nome, v->nome) != 0; p = p->prox){ ant = p; }
+  for (p = *l; p != NULL && strcmp(p->inf.nome, v->nome) != 0; p = p->prox){
+     ant = p;
+  }
 
-if (p==NULL){ printf("Nome não encontrado"); }
+  if (p==NULL){
+    printf("Nome não encontrado");
+  }
 
-else{ if (ant !=NULL){ ant->prox=p->prox; } else{ *l = p; } free(p); }
+  else{
+    if (ant !=NULL){
+      ant->prox=p->prox;
+    }
+    else{
+      *l = p->prox;
+    }
+    free(p);
+  }  
+}
+
+void imprimeCliente(Nolista **l) { 
+  Nolista *p;
+  if (!estaVazia(l)) {
+    for (p = *l; p != NULL; p = p->prox) {
+      Cliente i = p->inf;
+
+      printf("%d: %s\n",i.id, i.nome);
+    }
+  }
+
+  else {
+    printf("Lista Vazia!");
+  }
 }
