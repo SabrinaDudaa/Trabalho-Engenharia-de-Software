@@ -14,6 +14,13 @@ typedef struct Nolista {
   struct cliente inf;
   struct Nolista *prox;
 } Nolista;
+//struct e nó dos produtos
+typedef struct produto{
+  char nome[MAX];
+  char desc [MAX];
+  int id;
+  int quant;
+}Produto;
 
 void criarVazia(Nolista **l) { *l = NULL; }
 
@@ -102,5 +109,42 @@ void imprimeCliente(Nolista **l) {
 
   else {
     printf("Lista Vazia!");
+  }
+}
+            //produtos
+Produto* novoProduto() {
+  Produto* prod = (Produto*)malloc(sizeof(Produto));
+
+
+  printf("Digite o nome do produto:\t");
+  getchar();
+  scanf("%49[^\n]",prod->nome);
+  printf("Digite a descricao do produto:\t");
+  getchar();
+  scanf("%49[^\n]",prod->desc);
+  printf("Digite a quantidade no estoque:\t");
+  scanf("%d",&prod->quant);
+
+  return prod;
+}
+
+//Função que vai ser usada no vendaProduto
+Produto* vendProduto(){
+  Produto* prod = (Produto*)malloc(sizeof(Produto));
+  int y;
+  
+  printf("Digite o ID do Produto:\t");
+  scanf("%d",&prod->id);
+  printf("Digite a quantidade vendida:\t");
+  scanf("%d",&y);
+
+  if(y < 0){
+    printf("quantidade invalida.\n");
+    free(prod);
+    vendProduto();
+  }
+  else{
+    prod->quant = y;
+    return prod;
   }
 }
