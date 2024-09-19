@@ -47,9 +47,9 @@ Começo da implementação da segunda parte do trabalho(a parte dos produtos ven
   Também foram feitas atualizações do andamento do projeto, o que será feito e se há algum impercilho no prosseguimento. No fim nenhum impercilho foi relatado e 
   há possibilidades do projeto ser finalizado antes do prazo determinado.
 
-Renan 15/09:
+Renan 19/09:
 Adicionada as funções de organização de produto por ID, foram adicionadas as funções: novoProduto, leProduto e insereOrdenadoProd. Nenhum erro encontrado.
 
-Sabrina 17/09:
+Sabrina 20/09:
 Adicionada as funções de edição de produto, também por ID, essas função serão para editar descrição do produto. As funções são: imprimeProduto, editaDesc,  editaDescProduto. Nenhum erro encontrado.
 
