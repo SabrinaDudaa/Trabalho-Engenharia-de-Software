@@ -256,3 +256,4 @@ void editaDescProduto(Lista*l,Produto*v) {
    strcpy(p->info.desc,v->desc);
   }
 }
+//fim da parte de produtos
