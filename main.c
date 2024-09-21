@@ -129,6 +129,7 @@ void imprimeCliente(Nolista **l) {
     printf("Lista Vazia!");
   }
 }
+            //fim da parte de clientes
             //produtos
 Produto* novoProduto() {
   Produto* prod = (Produto*)malloc(sizeof(Produto));
