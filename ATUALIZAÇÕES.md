@@ -56,3 +56,6 @@ Adicionada as funções de edição de produto, também por ID, essas função s
 Renan 22/09:
 Começo da inserção da main e checagem do funcionamento das funções já inseridas de cada parte.
 
+Renan 23/09:
+Fim da inserção da main, terminei de inserir os cases para a formatação do Menu. Fim da main.
+
