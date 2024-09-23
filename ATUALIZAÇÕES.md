@@ -35,7 +35,7 @@ Renan 09/09:
 Foi feito a função de inserir o Cliente ordenadamente, ou seja, por ordem alfabética. Teve um erro na comparação de Strings, adicionado no ISSUES.
 
 Sabrina 09/09:
-Remoção e impressão dos clientes foram implementadas. Sem nehum problema.
+Remoção e impressão dos clientes foram implementadas. Sem nenhum problema.
 
 Renan 11/09:
 Começo da implementação da segunda parte do trabalho(a parte dos produtos vendidos e em estoque).
@@ -54,5 +54,5 @@ Sabrina 20/09:
 Adicionada as funções de edição de produto, também por ID, essas função serão para editar descrição do produto. As funções são: imprimeProduto, editaDesc,  editaDescProduto. Nenhum erro encontrado.
 
 Renan 22/09:
-Começo da inserção da main e checagem do funcionamento das funçoes já inseridas de cada parte.
+Começo da inserção da main e checagem do funcionamento das funções já inseridas de cada parte.
 
