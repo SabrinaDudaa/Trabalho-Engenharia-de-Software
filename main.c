@@ -257,3 +257,35 @@ void editaDescProduto(Lista*l,Produto*v) {
   }
 }
 //fim da parte de produtos
+
+
+//MAIN
+int main(void) {
+  Cliente *cliente = (Cliente *)malloc(sizeof(Cliente));
+  Produto* produto = (Produto*)malloc(sizeof(Produto));
+ 
+  Nolista *lista;
+  criarVazia(&lista);
+  Lista list = criaVazia();
+  
+  int idMain = 0, cont, idAnterior=0;
+  int idProd = 0;
+
+
+  do {
+    printf("\n----------------MENU------------------:\n");
+    printf("1 - Cadastrar novo cliente\n");
+    printf("2 - Remover Cliente\n");
+    printf("3 - Imprimir clientes\n");
+    printf("4 - Cadastrar novo produto\n");
+    printf("5 - Remover produto\n");
+    printf("6 - Imprimir produtos\n");
+    printf("7 - Editar descricao de produtos\n");
+    printf("8 - Registrar venda de produto\n");
+    printf("9 - Sair\n");
+    printf("--------------------------------------:\n");
+    printf("Escolha uma opcao:\t \n");
+    printf("\n");
+    scanf("%d", &cont);
+  }
+}
