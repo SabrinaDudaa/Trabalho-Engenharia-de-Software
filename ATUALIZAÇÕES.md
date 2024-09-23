@@ -54,5 +54,5 @@ Sabrina 20/09:
 Adicionada as funções de edição de produto, também por ID, essas função serão para editar descrição do produto. As funções são: imprimeProduto, editaDesc,  editaDescProduto. Nenhum erro encontrado.
 
 Renan 22/09:
-Comço da inserção da main e checagem do funcionamento das funçoes já inseridas de cada parte.
+Começo da inserção da main e checagem do funcionamento das funçoes já inseridas de cada parte.
 
