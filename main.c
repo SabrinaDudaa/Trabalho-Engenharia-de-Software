@@ -287,5 +287,66 @@ int main(void) {
     printf("Escolha uma opcao:\t \n");
     printf("\n");
     scanf("%d", &cont);
-  }
+    
+    switch (cont) {
+    case 1: {
+      cliente = criarCliente();
+      cliente->id = idMain;
+      idMain++;
+
+      insereOrdenado(&lista, cliente);
+      break;
+    }
+    case 2: {
+      cliente = removeCliente();
+      removerCliente(&lista, cliente);
+      break;
+    }
+    case 3: {
+      printf("\nAqui esta a lista de clientes:\n");
+      imprimeCliente(&lista);
+      break;
+    }
+    case 4: {
+      produto = novoProduto();
+      produto->id = idProd;
+      idProd++;
+      insereOrdenadoProd(&list, produto);
+      break;
+    }
+    case 5: {
+       removerProduto(&list);
+      break;
+    }
+
+    case 6: {
+      imprimeProduto(&list);
+      break;
+    }
+
+    case 7: {
+      produto=editaDesc();
+      editaDescProduto(&list,produto);
+      break;
+    }
+
+    case 8: {
+      produto = vendProduto();
+      vendaProduto(&list, produto);
+      break;
+    }
+
+    case 9:{
+      salvaCli(lista);
+      salvaPro(&list);
+      break;
+    }
+    default: {
+      printf("\nOpcao invalida!\n");
+      break;
+    }
+    }
+  } while (cont != 9);
+
+  return 0;
 }
