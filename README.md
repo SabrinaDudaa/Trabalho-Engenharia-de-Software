@@ -1,3 +1,8 @@
+PROJETO FEITO POR:
+SABRINA DE SOUZA DUDA
+RENAN OLIVEIRA SANTIAGO
+
+
 DECRIÇÃO DO PROJETO:
 
     Implementar um sistema de controle para uma loja veterinária. Sua primeira tarefa será desenvolver funcionalidades básicas que permitam cadastrar e
