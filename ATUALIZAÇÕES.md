@@ -59,3 +59,9 @@ Começo da inserção da main e checagem do funcionamento das funções já inse
 Renan 23/09:
 Fim da inserção da main, terminei de inserir os cases para a formatação do Menu. Fim da main.
 
+3ª Renuão do projeto 24/09 das 8h as 9h
+Tema: Últimos ajustes e considerações finais
+Após a finalização do projeto por ambas as partes, foram feitas as últimas checagens e testes para ver se nada estava fora dos requisitos
+ou com algum problema, no fim tudo estava correto e nenhum problema foi encontrado. A entrega seguiu seu prazo, no caso foi até mesmo feita antes. 
+Foi colocado então o projeto como concluido.
+
